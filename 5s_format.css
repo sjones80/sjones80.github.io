@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+   5 Star Recipes   
+   Web110-N801: Final Project
+   Author: Steven Jones
+   Date:   03/26/2023
+   Format Stylesheet
+   Filename: 5s_format.css
+
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+	background-color: hsl(27, 72%, 72%);				/* background */
+}
+
+body {
+	color: black;
+	background-color: hsl(118, 65%, 84%);
+}
+
+article p::first-letter {						/* pseudo */
+	font-family: cursive;		/* text */
+	font-size: 300%;	
+} 
+
+img {
+	width: 250px;
+	height: 400px;
+	float: right;
+}
+
+/* Heading Styles */
+h1 {
+	color: hsl(49, 100%, 52%);
+	background-color: (241, 74%, 52%);
+	font-size: 4vw;
+	font-family: 'Comic Sans MS', cursive;
+	text-align: center;
+}
+h2#top {				/* pseudo */
+	font-size: 2vw;
+	font-family: "Lucida Console", "Courier New", monospace;		/* text */
+	position: center-left;
+	margin: 40px;
+	padding: 20px;
+	clear: left;
+}
+
+/* Navigation Styles */	
+nav > ul {						/* contextual */
+	list-style-type: none;
+	margin-top: 15px;
+	padding: 0;
+	background-color: hsl(309, 65%, 84%);
+}
+
+nav > ul > li {
+	display: inline;
+	color: white;
+	text-align: center;
+	font-variant: small-caps;
+	border-style: ridge;
+	float: left;								/* float */
+}
+body > header > nav li {
+	width: 19%;
+}
+
+nav > ul > li > a:link, nav > ul > a:visited {		/* pseudo */
+	color: yellow;
+	text-decoration: none;
+}
+nav > ul> li > a:hover, nav > ul > li > a:active {
+		color: white;
+		text-decoration: underline;
+}
+
+
+/* List Styles */
+ol {
+	list-style-type: disc; /* lists */
+	color: purple;
+	line-height: 2em;
+}
+
+
+
+/* Footer Styles */
+footer {
+	text-align: center;
+	margin-top: auto;
+}

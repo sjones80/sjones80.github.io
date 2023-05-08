@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/*
+   5 Star Recipes   
+   Web110-N801: Final Project
+   Author: Steven Jones
+   Date:   03/26/2023
+   Layout Stylesheet
+   Filename: 5s_format.css
+
+*/
+
+/* 
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+*/
+@media only screen and (max-width: 480px){				/* @media */
+html {
+	height: 100%;
+	font-size: 16px;
+}
+img {
+	max-width: 100%;
+}
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	display: block;
+	clear: none;
+	min-height: 100%;
+}
+nav {
+	width: 25%;
+	float: left;
+	margin: auto;
+}
+article {
+	width: 85%;
+	float: left;
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+dl {
+	margin-left: auto;
+	font-family: "Lucida Sans", Verdana, sans-serif;
+}
+dt {
+	display: block;
+	margin: 0;
+	font-weight: bold;
+	
+}
+dd {
+	display: block;
+	margin: auto;
+	text-indent: 0;
+}
+
+footer {
+	text-align: center;
+	font-size: 1em;
+	margin-top: 5%;
+	clear: both;
+	padding-bottom: 20px;
+}}
+
+
+
+
+/* 
+	Tablet layout styles used by devices
+	481px to 768px and cascaded to larger 
+	devices.
+  
+*/
+
+
+@media only screen and (min-width: 481px) {				/* @ MEDIA */
+html, body {
+	font-size: 16px;
+}
+
+body {
+	width: 100%;
+	display: block; 			/* block */
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+header h1 {
+   font-size: 2.5em;
+}
+
+body article h1 {
+   font-size: 1.75em;
+}
+
+article {
+	width: 95%;
+	float: none;					/* float */
+	margin: 0px auto;
+}
+
+dl {
+	width: 90%;
+    margin: 0 auto;
+	text-align: left;
+}
+
+footer {
+	font-size: 1em;
+}}
+
+
+
+
+/*
+	Desktop layout styles used by  devices
+	769px and larger.
+*/
+
+@media only screen and (min-width: 769px) {				/*  @media */
+html, body {
+	font-size: 20px;
+}
+
+html {
+	background-color: hsl(176,124,48);
+	margin: 0px auto;
+}
+body {
+	width: 100%;
+	max-width: 1024px;
+	display: block;							/* block */ 
+	margin: auto;
+	background-color: hsl(79, 74%, 52%);
+}}
